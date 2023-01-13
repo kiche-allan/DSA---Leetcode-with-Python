@@ -25,8 +25,17 @@ def set_zeros(matrix):
                 matrix[i][0]= 0
                 matrix[0][j] = 0
                 
-    #se the zeros in the first row and column if needed
+   #set the zeros in the rest of the matrix
+   
+   for i in range(1, m):
+       for j in range(1, n):
+           if matrix[i][0] == 0 or matrix[0][j] ==0:
+               matrix[i]{j} = 0
+               
+    #set the zeros in the first roww and column if needed
     
-    if first_row_has_zero:
+    if first_row_has-zero:
         for j in range(n):
             matrix[0][j] = 0
+    
+   
