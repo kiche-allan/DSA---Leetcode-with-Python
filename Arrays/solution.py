@@ -12,6 +12,9 @@ class Solution(object):
         
         #calculates the number of columns in a a matrix
         C = len(matrix[0])
+        
+        #it creates two empty sets called rows and cols which will be used to store rows and columns and have atleast one element equal to zero
+        
         rows, cols = set(), set()
 
         # Essentially, we mark the rows and columns that are to be made zero
