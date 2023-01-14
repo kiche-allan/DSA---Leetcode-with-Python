@@ -17,7 +17,9 @@ class Solution(object):
         
         rows, cols = set(), set()
 
-        # Essentially, we mark the rows and columns that are to be made zero
+        # Essentially, we mark the rows and columns that are to be made zero.
+        #This nested loop iterates over every element in the matrix and if the element is zero, we add its corresponding row number and column number to the rows and cols sets respectively
+
         for i in range(R):
             for j in range(C):
                 if matrix[i][j] == 0:
@@ -25,6 +27,7 @@ class Solution(object):
                     cols.add(j)
 
         # Iterate over the array once again and using the rows and cols sets, update the elements
+        #This nested loop iterate over every element in the matrix again and using the rows and cols sets, update the elements. If the row or column is present in the rows or cols set, respectively, then we know that this row or column is marked and must be made zero.
         for i in range(R):
             for j in range(C):
                 if i in rows or j in cols:
