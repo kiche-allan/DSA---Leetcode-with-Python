@@ -1,13 +1,18 @@
+
 def set_zeros(matrix): 
     m, n = len(matrix), len(matrix[0])
+    
     first_row_has_zero = False
     first_col_has_zero = False
+    
+    
     
     #check if the first row has zero
     
     for j in range (n):
-        if matrix [0][j] == 0:
+        if matrix [0][j] == 0:      
             first_row_has_zero = True
+            
             break
         
     #check if the first column has zero
